@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #111111;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset, p {
+  margin: 15px;
+}
+
+button {
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #111111;
+  background-color: #FFDC00; /* Yellow */
+  color: #111111;
+}
+
+#button {
+  text-align: center;
+}
+
+header {
+  height: 50px;
+  border-bottom: 1px solid #111111;
+  background-color: #FFDC00;
+}
+
+header>div, #welcome, #learn {
+  position: relative;
+  display: block;
+  max-width: 500px;
+  margin: auto;
+}
+
+fieldset {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #111111;
+}
+
+legend {
+  margin-left: 10px;
+  padding: 0px 10px;
+}
+
+#pictureFrame {
+  position: relative;
+  max-width: 50%;
+  margin: 15px auto;
+}
+
+#welcomeImage, #image {
+  display: block;
+  width: 100%;
+}
+
+#learn {
+  display: none;
+}
+
+#skip {
+  position: absolute;
+  bottom: 0px;
+  right: -50px;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+@keyframes microphone {
+  50% {color: #FF4136;}
+  100% {color: #111111;}
+}
+
+#micOn, #micOff , #correct, #incorrect {
+  display: none;
+  position: absolute;
+  font-size: 50px;
+  top: 8px;
+  right: 0px;
+}
+
+#correct {color: #2ECC40;}
+#incorrect {color: #FF4136;}
+#micOn, #micOff {cursor: pointer;}
+#micOn {animation: microphone 1s linear 0s infinite;}
+
+#original, #result {
+  display: block;
+  margin: 10px 50px 15px 20px;
+}
+
+#logo, #menu {
+  display: block;
+  margin: 0px 15px;
+  color: #111111;
+  height: 50px;
+}
+
+#logo {
+  font-size: 20px;
+  line-height: 50px;
+  float: left;
+}
+
+#menu {
+  float: right;
+}
+
+#menuIcon {
+  font-size: 30px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+#menu:hover #menuOptions {
+  display: block;
+}
+
+#menuOptions{
+  display: none;
+  position: absolute;
+  overflow-y: auto;
+  max-width: 500px;
+  height: 500px;
+  top: 50px;
+  left: 0px;
+  z-index: 1;
+
+}
+
+#menuOptions>a {
+  display: inline-block;
+  padding: 15px;
+  color: #111111;
+  background: #FFDC00;
+  border-width: 0px 1px 1px 1px;
+  border-color: #111111;
+  border-style: solid;
+  width: 100%;
+}
+
+#menuOptions>a:hover {
+  background-color: #f9f9f9;
+}

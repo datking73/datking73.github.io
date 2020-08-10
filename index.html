@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title> Learn English </title>
+	<link rel="icon" href="https://tiendatdeptraiprovjp.000webhostapp.com/thpttanlong.png" type="image/icon type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="index.html" id="logo">Luyện Nói Tiếng Anh</a>
+      <nav id="menu">
+        <i class="material-icons" id="menuIcon">menu</i>
+        <div id="menuOptions">
+          <a href="#1"  id="1"  onclick="nextUnit(this)">1. First thing in the morning.</a>
+          <a href="#2"  id="2"  onclick="nextUnit(this)">2. Brushing your teeth/flossing.</a>
+          <a href="#3"  id="3"  onclick="nextUnit(this)">3. Taking a shower.</a>
+          <a href="#4"  id="4"  onclick="nextUnit(this)">4. Getting dressed(a man).</a>
+          <a href="#5"  id="5"  onclick="nextUnit(this)">5. Getting dressed(a woman).</a>
+          <a href="#6"  id="6"  onclick="nextUnit(this)">6. Making a bed</a>
+          <a href="#7"  id="7"  onclick="nextUnit(this)">7. Making coffee/tea</a>
+          <a href="#8"  id="8"  onclick="nextUnit(this)">8. Preparing cereal/toast</a>
+          <a href="#9"  id="9"  onclick="nextUnit(this)">9. Frying an egg</a>
+          <a href="#10" id="10" onclick="nextUnit(this)">10. Eating breakfast</a>
+          <a href="#11" id="11" onclick="nextUnit(this)">11. Leaving the house</a>
+          <a href="#12" id="12" onclick="nextUnit(this)">12. Taking a bus</a>
+          <a href="#13" id="13" onclick="nextUnit(this)">13. Starting out</a>
+          <a href="#14" id="14" onclick="nextUnit(this)">14. Operating a car</a>
+          <a href="#15" id="15" onclick="nextUnit(this)">15. Driving along</a>
+          <a href="#16" id="16" onclick="nextUnit(this)">16. Taking a train</a>
+          <a href="#17" id="17" onclick="nextUnit(this)">17. Taking a taxi</a>
+          <a href="#18" id="18" onclick="nextUnit(this)">18. Walking somewhere</a>
+          <a href="#19" id="19" onclick="nextUnit(this)">19. Riding a bicycle</a>
+          <a href="#20" id="20" onclick="nextUnit(this)">20. Returning home</a>
+          <a href="#21" id="21" onclick="nextUnit(this)">21. Making a salad</a>
+          <a href="#22" id="22" onclick="nextUnit(this)">22. Preparing vegetables</a>
+          <a href="#23" id="23" onclick="nextUnit(this)">23. Making spaghetti</a>
+          <a href="#24" id="24" onclick="nextUnit(this)">24. Cooking rice</a>
+          <a href="#25" id="25" onclick="nextUnit(this)">25. Eating dinner</a>
+          <a href="#26" id="26" onclick="nextUnit(this)">26. Clearing the table</a>
+          <a href="#27" id="27" onclick="nextUnit(this)">27. Doing dishes</a>
+          <a href="#28" id="28" onclick="nextUnit(this)">28. Playing a CD</a>
+          <a href="#29" id="29" onclick="nextUnit(this)">29. Using a cassette player</a>
+          <a href="#30" id="30" onclick="nextUnit(this)">30. Reading</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+  <div id="welcome">
+    <fieldset>
+      <legend>Welcome</legend>
+      <img id="welcomeImage" src="images/0.jpg" alt="welcome"/>
+    </fieldset>
+    <p>
+      Luyện nói tiếng anh bằng cách nói theo câu đã cho và phát âm đúng (tính năng chỉ khả dụng trên trình duyệt Google Chrome).
+    </p>
+    <div id="button">
+      <button onclick="startLearning()">Bắt đầu</button>
+    </div>
+  </div>
+
+
+
+  <div id="learn">
+    <fieldset id="pictureFrame">
+      <legend>Hình ảnh:</legend>
+      <img id="image" src="" alt=""/>
+      <span id="skip" onclick="skip()">Bỏ qua</span>
+    </fieldset>
+    <fieldset>
+      <legend>Đọc theo câu:</legend>
+      <i class="material-icons" id="micOn"  onclick="stopDictation()">mic</i>
+      <i class="material-icons" id="micOff" onclick="startDictation()">mic_off</i>
+      <span id="original"></span>
+    </fieldset>
+    <fieldset>
+      <legend>Kết quả:</legend>
+      <i class="material-icons" id="correct">check</i>
+      <i class="material-icons" id="incorrect">close</i>
+      <span id="result"></span>
+    </fieldset>
+  </div>
+
+
+
+
+<script src="english.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
